@@ -10,15 +10,19 @@
         <style>
         
             p {
-                color: darkgrey;
+                color: #5a5a5a;
                 font-size: 16px;
                 font-family: 'Open Sans', serif;
                 width: 50%;
             }
             #quote {
-                color: magenta;
+                color: darkgray;
                 font-style: italic;
                 border: solid lightskyblue 2px;
+            }
+
+            .book {
+                border-left: 3px solid darkcyan;
             }
 
             #bargraph {
@@ -72,7 +76,7 @@
         <h2>My handles</h2>
         <!-- Include: at least two handles for your social media accounts -->
         <!-- Tags to use: <p>, <a> -->
-        <p>This is a website called<a href="https://www.google.com"> Definetly my social media</a>. This is my other social media <a href="https://www.bing.com/"> Snapchat</a><p/>
+        <p>This is a website called<a href="https://www.google.com"target="_blank"> Definetly my social media</a>. This is my other social media <a href="https://www.bing.com/" target="_blank"> Snapchat</a><p/>
 
     
         <h2> ~ Challenge: Why is my text maroon?</h2>
@@ -84,7 +88,7 @@
         <!-- Include: "large_wink.png" as an image -->
         <!-- Tags to use: <img> -->
         <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
-        <img src="large_wink.png" alt="an image of a photograph, from Teju Cole's instagram account" height="300px" width="400px">
+        <img src="large_wink.png" alt="an image of Katheryn Hahn winking in an exaggerated fashion" height="300px" width="400px">
 
     
         <h2>Why I'm a great student</h2>
@@ -94,7 +98,7 @@
                 <li>I'm attentive</li>
                 <li>I'm studious</li>
                 <li>I ask questions</li>
-                <li>I stand on business</li>
+                <li><strong>I stand on business</li>
             </ul>
         
     
@@ -102,9 +106,9 @@
         <!-- Include: an ordered list -->
         <!-- Tags to use: <ol>, <li>, <a> -->
             <ol>
-                <li><a href="https://en.wikipedia.org/wiki/Bill_Gates">Bill Gates</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Macklemore">Mackelmore</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Rainn_Wilson">Rainn Wilson</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank">Bill Gates</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Macklemore" target="_blank">Mackelmore</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Rainn_Wilson" target="_blank">Rainn Wilson</a></li>
                 
 
 
@@ -116,6 +120,7 @@
                 about my college journey<br />
                 I just got sued<br />
                 I need an attorney<br />
+            </p>
 
 
     
@@ -124,18 +129,17 @@
         <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
         <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
            
-            <p>
-                <stlye id=#quote>"Everyone Poops"</stlye>
-                <h3>-Everyone Poops</h3></p>
+            <h3>My brain</h3>
+            <p id="quote">"if you try then thats a good thing"</p>
 
 
         <h2>These are more of my favorite books</h2>
         <!-- Include: an unordered list of at least three books, list items should have a border -->
         <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
-            <ul style="border: 1px solid black;">
-                <li>Everyone Poops</li>
-                <li>ISPY</li>
-                <li>To Kill a Mockingbird</li>
+            <ul>
+                <li class="book">Everyone Poops</li>
+                <li class="book">ISPY</li>
+                <li class="book">To Kill a Mockingbird</li>
             </ul>
 
         
@@ -143,19 +147,18 @@
         <h2>Here's how I normally spend my weekend</h2>
         <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
         <!-- Tags to use: <iframe> -->
-            <iframe title="Sleep Dominates the Weekened" aria-label="Map" id="datawrapper-chart-xNwOX" src="https://datawrapper.dwcdn.net/vYCXe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 60% !important; border: none;" height="463"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
-
-
+        <iframe title="Sleep Dominates the Weekend " aria-label="Column Chart" id="datawrapper-chart-vYCXe" src="https://datawrapper.dwcdn.net/vYCXe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="482" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
         <h3>~ Challenge: A very simple bar graph ~</h3>
         <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. (Use the CSS in #longest as a reference.) You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
 
         <div id="bargraph">
-            <h4>Length of bars</h4>
-            <p class="bar_label">Longest</p>
+            <h4> How much you slept this weekend</h4>
+            <p class="bar_label">Friday</p>
             <div id="longest"></div>
-            <p class="bar_label">Longer</p>
+            <p class="bar_label">Saturday</p>
             <div id="longer"></div>
-            <p class="bar_label">Long</p>
+            <p class="bar_label">Sunday</p>
             <div id="long"></div>
         </div>
      
